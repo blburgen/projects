@@ -64,7 +64,7 @@ h2 {
 a.navLink {
   display: inline-block;
   text-decoration: none;
-  margin: 0 2vw;
+  margin: 5pt;
   text-align: center;
   vertical-align: middle;
   width: 15vw;
@@ -79,12 +79,10 @@ a.navLink {
 a.navLinkThree {
   display: inline-block;
   text-decoration: none;
-  margin: 0 2vw;
+  margin: 5pt;
   text-align: center;
   vertical-align: middle;
-  width: 25vw;
-  height: 3vw;
-  font: bold 2vw arial;
+  font: bold 24pt arial;
   border: solid 2px red;
   box-shadow: 3px 3px 3px;
   border-radius: 10px;
@@ -92,8 +90,7 @@ a.navLinkThree {
 
 /*highlights the navigation link that your cursor is over*/
 a:hover {
-  color: black;
-  transform: scale(0.85);
+  transform: scale(0.95);
   cursor: pointer;
 }
 
