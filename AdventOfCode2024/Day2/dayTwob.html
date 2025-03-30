@@ -6,33 +6,37 @@
     <meta name="author" content="Brady Burgener">
     <meta name="description" content="Brady Burgener's website">
     <link rel="icon" href="..\..\..\falcon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="..\..\..\css\style.css">
     <script type="text/javascript" src=".\dayTwobAlt.js" defer></script>
     <title>Day2a\Advent Of Code 2024\projects\Burgener Brady</title>
     </head>
     <body>
-        <table>
-            <thead>
-                <th><a class="navLink" href="..\..\..\index.html">Home page</a></th>
-                <th><a class="navLink" href="..\..\index.html">Projects</a></th>
-                <th><a class="navLinkThree" href="..\index.html">Advent Of Code 2024</a></th>
-                <th><a class="navLink" id="coloredBox" href=".\dayTwob.html">Day 2 b</a></th>
-            </thead>
-        </table>
-        <p>The unusual data (your puzzle input) consists of many reports, one report per line. Each report is a 
-            list of numbers called levels that are separated by spaces.</p>
-        <p>The engineers are trying to figure out which reports are safe. The Red-Nosed reactor safety systems 
-            can only tolerate levels that are either gradually increasing or gradually decreasing. So, a report 
-            only counts as safe if both of the following are true:</p>
-        <ul>
-            <li>The levels are either all increasing or all decreasing.</li>
-            <li>Any two adjacent levels differ by at least one and at most three.</li>
-        </ul>
-        <p>The engineers are surprised by the low number of safe reports until they realize they forgot to tell 
-            you about the Problem Dampener.</p>
-        <p>The Problem Dampener is a reactor-mounted module that lets the reactor safety systems tolerate a single 
-            bad level in what would otherwise be a safe report. It's like the bad level never happened!</p>
-        <input type="file" name="file" id="file">
-        <div id='output'></div>
+        <div class="container-fluid navbar-expand-lg text-light">
+            <nav class="navbar-nav d-flex justify-content-evenly">
+                <a class="text-center bg-primary nav-link col-lg-2 border border-dark rounded-3 navLinkThree" href="..\..\..\">Home page</a>
+                <a class="text-center bg-primary nav-link col-lg-2 border border-dark rounded-3 navLinkThree" href="..\..\">Projects</a>
+                <a class="text-center bg-primary nav-link col-lg-3 border border-dark rounded-3 navLinkThree" href="..\">Advent Of Code 2024</a>
+                <a class="text-center bg-secondary nav-link col-lg-2 border border-dark rounded-3 navLinkThree" href=".\dayTwob.html">Day 2 b</a>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <p>The unusual data (your puzzle input) consists of many reports, one report per line. Each report is a 
+                list of numbers called levels that are separated by spaces.</p>
+            <p>The engineers are trying to figure out which reports are safe. The Red-Nosed reactor safety systems 
+                can only tolerate levels that are either gradually increasing or gradually decreasing. So, a report 
+                only counts as safe if both of the following are true:</p>
+            <ul>
+                <li>The levels are either all increasing or all decreasing.</li>
+                <li>Any two adjacent levels differ by at least one and at most three.</li>
+            </ul>
+            <p>The engineers are surprised by the low number of safe reports until they realize they forgot to tell 
+                you about the Problem Dampener.</p>
+            <p>The Problem Dampener is a reactor-mounted module that lets the reactor safety systems tolerate a single 
+                bad level in what would otherwise be a safe report. It's like the bad level never happened!</p>
+            <input type="file" name="file" id="file">
+            <div id='output'></div>
+        </div>
     </body>
 </html>

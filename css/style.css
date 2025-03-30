@@ -9,11 +9,8 @@ th {
 ul.no-bullets {
   list-style-type: none; /* Remove bullets */
 }
-/*places a border below sub-headers on resume*/
-h2 {
-  border-bottom: thin solid #0e2352;
-  text-transform: uppercase;
-}
+
+
 /*places the resume in a box*/
 .resume {
   border: 1px solid #0e2352;
