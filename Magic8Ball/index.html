@@ -6,25 +6,32 @@
   <meta name="author" content="Brady Burgener">
   <meta name="description" content="Brady Burgener's website">
   <link rel="icon" href="..\..\falcon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="..\..\css\style.css">
   <script type="text/javascript" src=".\Magic8Ball.js" defer></script>
   <title>Magic 8 Ball</title>
 </head>
 <body>
-  <nav>
-    <table>
-      <thead>
-        <th><a class="navLink" href="..\..\index.html">Home page</a></th>
-        <th><a class="navLink" href="..\index.html">Projects</a></th>
-      </thead>
-    </table>
-  </nav>
+  <div class="container-fluid navbar-expand-md text-light">
+    <nav class="navbar-nav d-flex justify-content-evenly">
+       <a class="text-center bg-primary nav-link col-md-4 border border-dark rounded-3 navLinkThree" href="..\..\">Home page</a>
+       <a class="text-center bg-primary nav-link col-md-4 border border-dark rounded-3 navLinkThree" href="..\">Projects</a>
+    </nav>
+ </div>
+
   <h1 id="magic8">Magic 8 Ball</h1>
     <p id="questionCustomer" style='text-align: center; font-size: 3vh;'></p>
     <p id="answerDelay"style='text-align: center; font-size: 3vh;'>...</p>
     <p id="answerCustomer"style='text-align: center; font-size: 3vh;'>...</p>
-    <button id="askAgain" style='display: block; margin-left: auto; margin-right: auto; margin-bottom: 5px; font-size: 3vh;';>Are you sure? <br> Ask The Same Question Again</button>
-    <a class="navLink" id="askAnother" href=".\index.html">Ask Another Question</a>
+    <div class="d-flex justify-content-center">
+      <button id="askAgain" class="text-center bg-primary nav-link col-md-4 border border-dark rounded-3 navLinkThree text-light p-4">
+        Are you sure? <br> I Want To Ask The Same Question Again
+      </button>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+      <a class="text-center bg-primary nav-link col-md-4 border border-dark rounded-3 navLinkThree text-light p-2" id="askAnother" href=".\">Ask Another Question</a>
+    </div>
 </body>
 
 </html>

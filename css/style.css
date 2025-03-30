@@ -10,7 +10,6 @@ ul.no-bullets {
   list-style-type: none; /* Remove bullets */
 }
 
-
 /*places the resume in a box*/
 .resume {
   border: 1px solid #0e2352;
@@ -87,7 +86,8 @@ a.navLinkThree {
 }
 
 /*highlights the navigation link that your cursor is over*/
-a:hover {
+a:hover, 
+button:hover {
   transform: scale(0.95);
   cursor: pointer;
 }
@@ -122,4 +122,9 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 25vw;
+}
+
+#askAgain {
+  font-size: 18pt;
+  font-weight: bold;
 }
