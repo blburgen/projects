@@ -84,8 +84,8 @@ a.navLinkThree {
   text-align: center;
   vertical-align: middle;
   font: bold 24pt arial;
-  border: solid 2px red;
-  box-shadow: 3px 3px 3px;
+  border: solid 2px black;
+  box-shadow: 3px 3px 3px blue;
   border-radius: 10px;
 }
 
