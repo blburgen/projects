@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Card Game / Week09 / Front End / Quick Start / Brady Burgener</title>
+    
+    <!--Connects bootstrap css online to this html-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid navbar-expand-md text-light">
+        <nav class="navbar-nav d-flex justify-content-evenly">
+          <a class="text-center bg-primary nav-link col-md-4 border border-dark rounded-3 navLinkThree" href="..\..\">Home page</a>
+          <a class="text-center bg-secondary nav-link col-md-4 border border-dark rounded-3 navLinkThree" href="..\">Projects</a>
+        </nav>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <h1 class="text-center">Quick Start Front End Week 09 Coding Assignment</h1>
+        <h2 class="text-center">War Card Game</h2>
+        <!--<h3 class="text-center">Open the Console to see the game</h3>-->
+        <h4 class="text-center">rules</h4>
+        <ol>
+            <li>The player with the higher card wins.  Places the cards on the bottom of the winner's deck</li>
+            <ul>
+                <li>Ace counts as 1</li>
+                <li>King is the highest card</li>
+            </ul>
+            <li>if there is a tie - war begins</li>
+            <ul>
+                <li>2 cards are removed</li>
+                <li>the second card is used to determine the winner</li>
+                <li>if a tie happens repeat until a winner is determined</li>
+            </ul>
+        </ol>
+    </div>
+    <div>
+        <p id="winner" class="text-center">Game results placed here</p>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+        <button id="newGame" class="rounded-3">New Game</button>
+    </div>
+    <div class="container">
+        <p id="results">Round results placed here</p> 
+    </div>
+    <script src="WarClassesAllCards.js"></script><!--connects the javascript file to this html-->  
+</body>
+</html>
